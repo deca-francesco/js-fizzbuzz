@@ -15,10 +15,30 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 - condizionali if/else if/else
 */
 
+
+
+// Devo fare un ciclo for con all'interno le if per i multipli di 3, di 5 e di entrambi.
+// Ho trovato che posso usare l'operatore % per verificare quando un numero può essere esattamente divisibile per un altro
+// inserisco i diversi log nelle diverse if
+
 // 1) Dichiarazione variabili
 
 // 2) Raccolta dati
 
 // 3) Elaborazione dati
-
+//ciclo for
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+    }
+    else if (i % 3 == 0) {
+        console.log("Fizz");
+    }
+    else if (i % 5 == 0) {
+        console.log("Buzz");
+    }
+    else {
+        console.log(i);
+    }
+}
 // 4) Output
