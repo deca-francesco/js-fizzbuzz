@@ -35,4 +35,23 @@ for (let i = 1; i <= 100; i++) {
     else {
         console.log(i);
     }
+
+    // si può usare anche la condzionale con switch case
+    switch (true) {
+        case i % 3 == 0 && i % 5 == 0:
+            console.log("Switch Case");
+            break;
+
+        case i % 3 == 0:
+            console.log("Switch");
+            break
+
+        case i % 5 == 0:
+            console.log("Case");
+            break
+
+        default:
+            console.log(i);
+            break;
+    }
 }
